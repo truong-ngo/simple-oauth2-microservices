@@ -1,0 +1,8 @@
+<div>
+  <button *ngIf="!isLoggedIn" (click)="login()" type="submit">Login</button>
+  <div *ngIf="isLoggedIn">
+    <app-content></app-content><br/>
+    <a (click)="logout()" href="#">Logout</a>
+  </div>
+</div>
+
